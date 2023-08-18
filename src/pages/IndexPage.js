@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import IntroImg from "../img/intro-1.jpg";
 import IntroImg2 from "../img/intro-2.jpg";
 
+
 function IndexPage() {
 	return (
 		<>
@@ -35,7 +36,7 @@ function IndexPage() {
 					</SwiperSlide>
 				</Swiper>
 				<div className="text">
-					<h1 className="main-title"> UZODESSE</h1>
+					<h1 className="main-title"> UZODDESSE</h1>
 					<h2>
 						Производство центробежных насосов, погружных электродвигателей для агрессивных сред горнодобывающей отрасли
 					</h2>
@@ -74,7 +75,7 @@ function IndexPage() {
 						<div className="back">
 							<h4>В интересах заказчиков</h4>
 							<p>
-								обладая современным технологическим оборудованием, а также современной системой
+								Обладая современным технологическим оборудованием, а также современной системой
 								управления производством, компания оперативно реагирует на пожелания заказчиков.
 							</p>
 						</div>

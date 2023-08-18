@@ -3,6 +3,9 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Tick from "../../img/tick.svg";
 import { Link } from "react-router-dom";
+import GenPic1 from "../../img/gen-1.png";
+import GenInfo1 from "../../img/gen-info-1.png";
+import Collapsible from "react-collapsible";
 function Gen1() {
 	return (
 		<div className="inner-page">
@@ -18,151 +21,179 @@ function Gen1() {
 					</Link>
 					<span>/</span>
 					<Link to="/products/gen1" className="path-link">
-						po-mo6.4 • 50 Hz
+						Погружные насосы
 					</Link>
 				</div>
-				<h3>po-mo6.4 • 50 Hz • 3 ~ • S.F. 1.0</h3>
-				<table>
-					<thead>
-						<th colSpan={2}>Мощность P</th>
-						<th colSpan={2}>Длина l</th>
-						<th colSpan={2}>Масса m</th>
-					</thead>
-					<tr>
-						<td>kW</td>
-						<td>HP</td>
-						<td>mm</td>
-						<td>inch</td>
-						<td>kg </td>
-						<td>lbs</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>5.5</td>
-						<td>654</td>
-						<td>25.7</td>
-						<td>40</td>
-						<td>88</td>
-					</tr>
-					<tr>
-						<td>5.5</td>
-						<td>7.5</td>
-						<td>697</td>
-						<td>27.4</td>
-						<td>44</td>
-						<td>97</td>
-					</tr>
-					<tr>
-						<td>7.5</td>
-						<td>10</td>
-						<td>729</td>
-						<td>28.7</td>
-						<td>48</td>
-						<td>106</td>
-					</tr>
-					<tr>
-						<td>9.2</td>
-						<td>12.5</td>
-						<td>769</td>
-						<td>30.3</td>
-						<td>52</td>
-						<td>115</td>
-					</tr>
-					<tr>
-						<td>11</td>
-						<td>15</td>
-						<td>854</td>
-						<td>33.6</td>
-						<td>60</td>
-						<td>132</td>
-					</tr>
-					<tr>
-						<td>13</td>
-						<td>17.5</td>
-						<td>889</td>
-						<td>35</td>
-						<td>64</td>
-						<td>141</td>
-					</tr>
-					<tr>
-						<td>15</td>
-						<td>20</td>
-						<td>939</td>
-						<td>37</td>
-						<td>69</td>
-						<td>152</td>
-					</tr>
-					<tr>
-						<td>18.5</td>
-						<td>25</td>
-						<td>1004</td>
-						<td>39.5</td>
-						<td>76</td>
-						<td>168</td>
-					</tr>
-					<tr>
-						<td>22</td>
-						<td>30</td>
-						<td>1079</td>
-						<td>42.5</td>
-						<td>83</td>
-						<td>183</td>
-					</tr>
-					<tr>
-						<td>26</td>
-						<td>35</td>
-						<td>1149</td>
-						<td>45.2</td>
-						<td>89</td>
-						<td>196</td>
-					</tr>
-					<tr>
-						<td>30</td>
-						<td>40</td>
-						<td>1259</td>
-						<td>49.6</td>
-						<td>97</td>
-						<td>214</td>
-					</tr>
-					<tr>
-						<td>34</td>
-						<td>45</td>
-						<td>1309</td>
-						<td>51.5</td>
-						<td>101</td>
-						<td>223</td>
-					</tr>
-					<tr>
-						<td>37</td>
-						<td>50</td>
-						<td>1389</td>
-						<td>54.7</td>
-						<td>106</td>
-						<td>234</td>
-					</tr>
-					<tr>
-						<td>45</td>
-						<td>60</td>
-						<td>1609</td>
-						<td>63.3</td>
-						<td>122</td>
-						<td>269</td>
-					</tr>
-				</table>
-				<ul className="features">
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Давление вниз (до 15 kW): 15 kN / 3300 lbs </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Давление вниз (свыше 15 kW): 23 kN / 5100 lbs </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Давление вверх: 0.5 kN / 110 lbs</p>
-					</li>
-				</ul>
+				<h2>ПОГРУЖНЫЕ НАСОСЫ</h2>
+				<h3>Гарантированная надежная работа</h3>
+				<div className="info">
+					<div className="img">
+						<img src={GenPic1} alt="product" />
+					</div>
+					<div className="text">
+						<h4>Типы: po-so / po-ss</h4>
+						<h4>Технические характеристики</h4>
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Подача: до 1200 м3/час</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Напор: до 600 м</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Мощность: до 450 кВт</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Напряжение: до 1000 B </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Вид тока: 1~ & 3~</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Частота: 50 & 60 Hz </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Класс защиты: IP 68 </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Температура применения: до 80 °C</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div className="accordion">
+					<Collapsible trigger="Области применения">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Насосные станции питьевого водоснабжения</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Орошение и осушение</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Дождевальные установки</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Водоотлив в горном деле и подземном строительстве</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Перекачивание хозяйственной воды в промышленности и на электростанциях</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Системы повышения давления</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Использование геотермальных вод</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Перекачивание химически загрязненных вод</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Техника для защиты окружающей среды</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Чистая или слабо загрязненная вода с содержанием твердых частиц до 50 мг/л </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Пресная, морская и солоноватая вода</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Температура перекачиваемой среды до 80 °C</p>
+							</li>
+						</ul>
+					</Collapsible>
+					<Collapsible trigger="Преимущества">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Небольшой внешний диаметр</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Вертикальная или горизонтальная установка</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Низкие капиталовложения и эксплуатационные расходы </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Длительная работа без техобслуживания</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Возможно регулирование с помощью частотного преобразователя ⦁ Небольшие затраты на
+									ремонт
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Небольшой ассортимент запчастей за счет модульной конструкции</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Экологичность и возможность рециклинга</p>
+							</li>
+						</ul>
+					</Collapsible>
+					<Collapsible trigger="Исполнения">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Многоступенчатые центробежные насосы кожухотрубной и секционной конструкции с
+									радиальными и полуосевыми рабочими колесами
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Двигатели с мокрым ротором с заменяемой обмоткой</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Двигатели согласно норме NEMA или международным стандартам</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Напорные патрубки с трубной резьбой или фланцем</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Высококачественные материалы для использования в хозяйственной, промышленной,
+									геотермальной и морской воде
+								</p>
+							</li>
+						</ul>
+					</Collapsible>
+				</div>
+				<div className="info-img">
+					<h3>График мощности (напор и подача)</h3>
+					<div className="img">
+						<img src={GenInfo1} alt="graph" />
+					</div>
+				</div>
 			</main>
 			<Footer />
 		</div>
@@ -170,22 +201,3 @@ function Gen1() {
 }
 
 export default Gen1;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -3,7 +3,10 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Tick from "../../img/tick.svg";
 import { Link } from "react-router-dom";
-function Gen3() {
+import GenPic3 from "../../img/gen-3.png";
+import GenInfo3 from "../../img/gen-info-3.png";
+import Collapsible from "react-collapsible";
+function Gen1() {
 	return (
 		<div className="inner-page">
 			<Header />
@@ -18,343 +21,177 @@ function Gen3() {
 					</Link>
 					<span>/</span>
 					<Link to="/products/gen3" className="path-link">
-						po-mo6.4 • 400 V, 50 Hz
+						Погружные двигатели
 					</Link>
 				</div>
-				<h3>po-mo6.4 • 400 V, 50 Hz • 3 ~ • S.F. 1.0 • Прямое включение</h3>
-				<table className="deleted">
-					<thead>
-						<th colSpan={2}>Pn</th>
-						<th>In</th>
-						<th>Ia/In</th>
-						<th colSpan={3}>φ</th>
-						<th colSpan={3}>cos φ </th>
-						<th>Ma/Mn</th>
-						<th>Mk/Mn</th>
-						<th>n</th>
-						<th>кабель</th>
-					</thead>
-					<tr>
-						<td>kW </td>
-						<td>HP </td>
-						<td>A </td>
-						<td></td>
-						<td>2/4 </td>
-						<td>3/4</td>
-						<td>4/4 </td>
-						<td>2/4</td>
-						<td>3/4</td>
-						<td>4/4</td>
-						<td></td>
-						<td></td>
-						<td>1/min</td>
-						<td>mm²</td>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>5.5</td>
-						<td>10</td>
-						<td>5.4</td>
-						<td>72</td>
-						<td>76</td>
-						<td>77</td>
-						<td>64</td>
-						<td>74</td>
-						<td>79</td>
-						<td>1.5</td>
-						<td>2.6</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>5.5</td>
-						<td>7.5</td>
-						<td>12</td>
-						<td>5.7</td>
-						<td>75</td>
-						<td>79</td>
-						<td>80</td>
-						<td>67</td>
-						<td>77</td>
-						<td>83</td>
-						<td>1.6</td>
-						<td>2.9</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>7.5</td>
-						<td>10</td>
-						<td>17</td>
-						<td>5.6</td>
-						<td>76</td>
-						<td>80</td>
-						<td>82</td>
-						<td>64</td>
-						<td>74</td>
-						<td>79</td>
-						<td>1.7</td>
-						<td>2.7</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>9.2</td>
-						<td>12.5</td>
-						<td>21</td>
-						<td>5.6</td>
-						<td>76</td>
-						<td>81</td>
-						<td>82</td>
-						<td>65</td>
-						<td>75</td>
-						<td>80</td>
-						<td>1.6</td>
-						<td>2.8</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>11</td>
-						<td>15</td>
-						<td>24</td>
-						<td>6.3</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>66</td>
-						<td>76</td>
-						<td>82</td>
-						<td>1.8</td>
-						<td>3.4</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>13</td>
-						<td>17.5</td>
-						<td>29</td>
-						<td>6</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>64</td>
-						<td>74</td>
-						<td>80</td>
-						<td>1.7</td>
-						<td>3</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>15</td>
-						<td>20</td>
-						<td>32</td>
-						<td>5.9</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>66</td>
-						<td>76</td>
-						<td>82</td>
-						<td>1.8</td>
-						<td>2.9</td>
-						<td>2850</td>
-						<td>1 fl 4 × 2.5</td>
-					</tr>
-					<tr>
-						<td>18.5</td>
-						<td>25</td>
-						<td>40</td>
-						<td>5.8</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>65</td>
-						<td>76</td>
-						<td>81</td>
-						<td>1.8</td>
-						<td>2.9</td>
-						<td>2850</td>
-						<td>1 fl 4 × 4</td>
-					</tr>
-					<tr>
-						<td>22</td>
-						<td>30</td>
-						<td>48</td>
-						<td>5.9</td>
-						<td>78</td>
-						<td>83</td>
-						<td>84</td>
-						<td>65</td>
-						<td>75</td>
-						<td>80</td>
-						<td>1.8</td>
-						<td>3.1</td>
-						<td>2850</td>
-						<td>1 fl 4 × 6</td>
-					</tr>
-					<tr>
-						<td>26</td>
-						<td>35</td>
-						<td>57</td>
-						<td>6</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>65</td>
-						<td>75</td>
-						<td>80</td>
-						<td>2.1</td>
-						<td>2.7</td>
-						<td>2830</td>
-						<td>1 fl 4 × 6</td>
-					</tr>
-					<tr>
-						<td>30</td>
-						<td>40</td>
-						<td>64</td>
-						<td>5.6</td>
-						<td>77</td>
-						<td>82</td>
-						<td>83</td>
-						<td>67</td>
-						<td>78</td>
-						<td>83</td>
-						<td>2.2</td>
-						<td>2.6</td>
-						<td>2830</td>
-						<td>1 fl 4 × 6</td>
-					</tr>
-					<tr>
-						<td>34</td>
-						<td>45</td>
-						<td>71</td>
-						<td>5.4</td>
-						<td>78</td>
-						<td>83</td>
-						<td>84</td>
-						<td>67</td>
-						<td>78</td>
-						<td>83</td>
-						<td>2.2</td>
-						<td>2.6</td>
-						<td>2830</td>
-						<td>2 fl 4 × 4*</td>
-					</tr>
-					<tr>
-						<td>37</td>
-						<td>50</td>
-						<td>78</td>
-						<td>5.4</td>
-						<td>78</td>
-						<td>83</td>
-						<td>84</td>
-						<td>67</td>
-						<td>78</td>
-						<td>83</td>
-						<td>1.5</td>
-						<td>2.5</td>
-						<td>2830</td>
-						<td>2 fl 4 × 4’*</td>
-					</tr>
-					<tr>
-						<td>45</td>
-						<td>60</td>
-						<td>95</td>
-						<td>5.4</td>
-						<td>76</td>
-						<td>81</td>
-						<td>82</td>
-						<td>68</td>
-						<td>78</td>
-						<td>84</td>
-						<td>2.3</td>
-						<td>3.2</td>
-						<td>2820</td>
-						<td>2 fl 4 × 6**</td>
-					</tr>
-				</table>
-				<ul className="features">
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Pn: номинальная мощность </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>In: номинальный ток </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Ia/In: пусковой ток/номинальный ток </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>η: к.п.д. </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>cos φ: коэффициент мощности </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p>Ma/Mn: пусковой момент / номинальный момент </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p> Mk/Mn: опрокидывающий момент / номинальный момент </p>
-					</li>
-					<li>
-						<img src={Tick} alt="tick" />
-						<p> n: номинальное число оборотов</p>
-					</li>
-				</ul>
-				<table>
-					<tr>
-						<td>Присоединение </td>
-						<td>6" NEMA </td>
-					</tr>
-					<tr>
-						<td>Длина кабеля</td>
-						<td>4 m </td>
-					</tr>
-					<tr>
-						<td>Степень защиты</td>
-						<td>IP68 (EN60034)</td>
-					</tr>
-					<tr>
-						<td>Допуски </td>
-						<td>DIN VDE 0530 / IEC 34</td>
-					</tr>
-					<tr>
-						<td>Допуски напряжений</td>
-						<td>+6 % / -10 % (DIN IEC 38)</td>
-					</tr>
-					<tr>
-						<td>Пуск звезда-треугольник</td>
-						<td>Ia/In×0.33, Ma/Mn×0.33</td>
-					</tr>
-					<tr>
-						<td>Горизонтальное применение</td>
-						<td>до 34 kW</td>
-					</tr>
-					<tr>
-						<td>Частота включений</td>
-						<td>макс. 20/h</td>
-					</tr>
-					<tr>
-						<td>Температура применения</td>
-						<td>макс. 30 °C (макс. 50 °C XLPE/PA- провод)</td>
-					</tr>
-					<tr>
-						<td>Скорость обтекания</td>
-						<td>0 m/s (3.7-11 kW), мин. 0.2 m/s (13-15 kW), мин. 0.5 m/s (18.5-45 kW</td>
-					</tr>
-				</table>
+				<h2>ПОГРУЖНЫЕ ДВИГАТЕЛИ</h2>
+				<h3>В соответствии с наивысшими мировыми требованиями</h3>
+				<div className="info">
+					<div className="img">
+						<img src={GenPic3} alt="product" />
+					</div>
+					<div className="text">
+						<h4>Типы: po-mo / po-moh</h4>
+						<h4>Рабочие характеристики</h4>
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>мощность: до 400 кВт </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>напряжения: до 1000 В</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>вид тока: 3 ~ частота: 50 и 60 Гц </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>вид защиты: IP 68 </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>температура: до 30 °C / 50 °C (выше по запросу)</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>частота включений: макс. 20 / час (po-mo12 макс. 10 / час) </p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>число оборотов: 2850 1/мин и 3460 1/мин</p>
+							</li>
+
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Вес: до 590 кг</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div className="accordion">
+					<Collapsible trigger="Области применения">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Приводной двигатель для всех погружных насосов, присоединительные размеры которых
+									соответствуют нормам NEMA или международным стандартам
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Привод насосов, работающих в особых условиях горного дела, оффшорной промышленности,
+									при использовании тепла геотермальных источников
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Приводные двигатели скважинных насосов для перекачивания воды</p>
+							</li>
+						</ul>
+					</Collapsible>
+					<Collapsible trigger="Преимущества">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Одни из наилучших в мире рабочих характеристик двигателей</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Вращение двигателя в любом направлении</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Простое использование, не требующее техобслуживания, длительный срок службы</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Удобство в проведении сервисных работ благодаря модульной конструкции,
+									обеспечивающей взаимозаменяемость деталей
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Возможен полный рециклинг двигателей</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Экологичность благодаря использованию физиологически безопасных материалов,
+									энергоэффективность, высокая коррозионная стойкость
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Хорошая сервисная сеть</p>
+							</li>
+						</ul>
+					</Collapsible>
+					<Collapsible trigger="Исполнения">
+						<ul className="features">
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Асинхронные двигатели трехфазного тока с заполнением водой для напряжений до 1000 В,
+									а также для 50 и 60 Гц
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Статоры с заменяемой обмоткой и динамически сбалансированные мокрые роторы,
+									устойчивые к термонагрузкам{" "}
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Высококачественные упорные подшипники с высокой допустимой нагрузкой, обеспечивающие
+									вращение двигателя в любом направлении{" "}
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Смазываемые водой радиальные подшипники для установки двигателей в горизонтальном
+									или вертикальном положении
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>Возможно исполнение обмотки для температуры перекачиваемой среды до 80 °C</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Возможно регулирование частоты вращения с помощью частотного преобразователя в
+									пределах от 30 до 60 Гц
+								</p>
+							</li>
+							<li>
+								<img src={Tick} alt="tick" />
+								<p>
+									Высококачественные материалы для использования в хозяйственной, промышленной и
+									морской воде
+								</p>
+							</li>
+						</ul>
+					</Collapsible>
+				</div>
+				<div className="info-img">
+					<h3>Серии</h3>
+					<div className="img">
+						<img src={GenInfo3} alt="graph" />
+					</div>
+				</div>
 			</main>
 			<Footer />
 		</div>
 	);
 }
 
-export default Gen3;
+export default Gen1;

@@ -74,26 +74,30 @@ function AboutPage() {
 					<Swiper
 						modules={[Autoplay]}
 						spaceBetween={0}
-						slidesPerView={4.5}
+						slidesPerView={5}
 						speed={1500}
-						loop={true}
+						loop={false}
 						autoplay={true}
 						breakpoints={{
 							1200: {
 								width: 1200,
-								slidesPerView: 4.5,
+								slidesPerView: 5,
 							},
 							768: {
 								width: 768,
-								slidesPerView: 3.5,
+								slidesPerView: 4,
 							},
 							600: {
 								width: 600,
-								slidesPerView: 2.5,
+								slidesPerView: 3,
 							},
 							350: {
 								width: 350,
-								slidesPerView: 1.5,
+								slidesPerView: 2,
+							},
+							320: {
+								width: 320,
+								slidesPerView: 2,
 							},
 						}}
 					>

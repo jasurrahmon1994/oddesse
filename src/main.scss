@@ -337,7 +337,7 @@ html {
 			position: absolute;
 			top: 150px;
 			left: 0;
-			margin: 0 calc((100vw - 1400px)/2);
+			margin: 0 calc((100vw - 1400px) / 2);
 			z-index: 3;
 			max-width: 35%;
 			h1 {
@@ -551,8 +551,19 @@ html {
 			.partners {
 				height: 150px;
 				margin-top: 30px;
-				padding: 0px 30px;
 				background: white;
+				display: flex;
+				align-items: center;
+				.swiper {
+					.img {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						img {
+							max-width: 80%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -887,47 +898,14 @@ html {
 					background: $blue;
 				}
 			}
-			.react-tabs__tab-list {
-				display: flex;
-				width: 90%;
-				margin: auto;
-				margin-bottom: 60px;
-				border-radius: 10px;
-				.react-tabs__tab {
-					flex: 0 0 50%;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					border: none;
-					height: 70px;
-					background: white;
-					padding: 0;
-					p {
-						font-size: 20px;
-						font-weight: 700;
-						color: black;
-						padding-left: 45px;
-					}
-					&.react-tabs__tab--selected {
-						background: $blue;
-						p {
-							color: white;
-						}
-						img {
-							filter: invert(1);
-						}
-					}
-					img {
-						height: 40px;
-					}
-				}
-			}
-			.react-tabs__tab-panel {
+			.product-list {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
 				width: 90%;
 				margin: auto;
+				margin-bottom: 60px;
+				border-radius: 10px;
 				.card {
 					flex: 0 0 32%;
 					height: 420px;
@@ -964,33 +942,89 @@ html {
 			max-width: 1440px;
 			margin: 0 auto;
 			padding: 120px 30px 50px;
-			background: #f8f8f8;
-			h3 {
+			h3,
+			h2 {
 				text-align: center;
-				padding-bottom: 30px;
+				padding-bottom: 20px;
 			}
-			table {
-				width: 100%;
-				margin: 15px 0;
-				th,
-				td {
-					text-align: center;
-					height: 40px;
-					border: 1px solid rgb(172, 172, 172);
-				}
+			h3 {
+				text-transform: capitalize;
 			}
 			.features {
-				padding: 10px 0 30px;
+				padding: 15px 0;
 				width: 100%;
-				margin: 30px auto 0;
+				padding-left: 30px;
 				li {
 					display: flex;
-					align-items: center;
-					padding: 15px 0;
+					padding: 10px 15px;
 					p {
 						font-weight: 700;
-						padding-left: 30px;
+						padding-left: 20px;
+						line-height: 1.4;
 					}
+					img {
+						width: 15px;
+						height: 15px;
+						object-fit: contain;
+					}
+				}
+			}
+			.info {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.img {
+					flex: 0 0 50%;
+					display: flex;
+					justify-content: center;
+					img {
+						width: 80%;
+					}
+				}
+				.text {
+					flex: 0 0 40%;
+					h4 {
+						padding: 10px 0;
+						color: black;
+					}
+				}
+			}
+			.accordion {
+				padding: 30px 20px;
+				background: #f8f8f8;
+				.Collapsible {
+					width: 90%;
+					margin: auto;
+					background: #fff;
+					span {
+						font-size: 20px;
+						font-weight: 700;
+						position: relative;
+						display: flex;
+						padding: 20px 30px;
+						cursor: pointer;
+						&::after {
+							content: "+";
+							position: absolute;
+							top: 50%;
+							right: 30px;
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+			.info-img {
+				padding-top: 20px;
+				.img {
+					display: flex;
+					justify-content: center;
+					img {
+						max-width: 100%;
+					}
+				}
+				h4 {
+					padding: 30px 0;
+					text-align: center;
 				}
 			}
 		}
@@ -1003,6 +1037,7 @@ html {
 			color: black;
 			font-weight: 500;
 			font-size: 16px;
+			white-space: nowrap;
 		}
 		span {
 			color: black;
@@ -1029,7 +1064,8 @@ html {
 				right: 20px;
 				max-width: 50%;
 			}
-			.left, .right {
+			.left,
+			.right {
 				display: none;
 			}
 		}
@@ -1125,7 +1161,7 @@ html {
 		.about-page main {
 			padding-top: 100px;
 			.partners {
-				padding: 0px 20px;
+				height: 120px;
 			}
 		}
 		.vacancy-page main .img-text .img {
@@ -1133,20 +1169,10 @@ html {
 		}
 		.products-page main {
 			padding: 80px 20px 30px;
-			.react-tabs__tab-panel {
+			.product-list {
 				width: 100%;
-			}
-			.react-tabs__tab-list {
-				width: 100%;
-				.react-tabs__tab {
-					height: 60px;
-					p {
-						font-size: 16px;
-						padding-left: 15px;
-					}
-					img {
-						height: 30px;
-					}
+				.card {
+					height: 370px;
 				}
 			}
 		}
@@ -1154,26 +1180,6 @@ html {
 			padding: 80px 20px 20px;
 			h3 {
 				padding-bottom: 20px;
-			}
-			table.deleted {
-				tr td {
-					&:nth-child(4),
-					&:nth-child(5),
-					&:nth-child(6),
-					&:nth-child(7),
-					&:nth-child(8),
-					&:nth-child(9),
-					&:last-child {
-						display: none;
-					}
-				}
-				thead th {
-					&:nth-child(4),
-					&:nth-child(5),
-					&:last-child {
-						display: none;
-					}
-				}
 			}
 		}
 	}
@@ -1285,6 +1291,29 @@ html {
 				}
 			}
 		}
+		.inner-page main {
+			.info {
+				flex-wrap: wrap;
+				.img {
+					flex: 0 0 100%;
+				}
+				.text {
+					flex: 0 0 100%;
+					h4 {
+						text-align: center;
+					}
+				}
+			}
+			.accordion {
+				.Collapsible {
+					width: 100%;
+					span {
+						font-size: 18px;
+						font-weight: 700;
+					}
+				}
+			}
+		}
 	}
 }
 @media (max-width: 768px) {
@@ -1346,8 +1375,8 @@ html {
 			.img {
 				top: 50px;
 				&::after {
-				background: rgba($color: #000000, $alpha: 0.2);
-			}
+					background: rgba($color: #000000, $alpha: 0.2);
+				}
 			}
 			.text {
 				max-width: unset;
@@ -1446,26 +1475,12 @@ html {
 					bottom: 10px;
 				}
 			}
-			.react-tabs__tab-panel {
+			.product-list {
 				.card {
 					flex: 0 0 48%;
 					height: auto;
 					padding: 10px 10px 30px;
 					margin-bottom: 20px;
-				}
-			}
-			.react-tabs__tab-list {
-				margin-bottom: 30px;
-				.react-tabs__tab {
-					height: 50px;
-					p {
-						font-size: 12px;
-						padding: 0 10px;
-						text-align: center;
-					}
-					img {
-						display: none;
-					}
 				}
 			}
 		}
@@ -1481,23 +1496,50 @@ html {
 		height: 180px;
 		padding: 20px 10px;
 	}
-	.App .products-page main .react-tabs__tab-panel .card {
+	.App .products-page main .product-list .card {
 		flex: 0 0 100%;
 		margin-bottom: 30px;
 	}
-	.App .inner-page main .features {
-		margin: 0;
-		padding: 20px 0px 0;
-		img {
-			width: 20px;
+	.App .inner-page main {
+		padding-top: 50px;
+		h2 {
+			font-size: 18px;
+			padding-bottom: 10px;
 		}
-		li p {
-			padding-left: 15px;
+		h3 {
+			font-size: 14px;
+			padding-bottom: 20px;
 		}
-	}
-	.App .inner-page main table th,
-	.App .inner-page main table td {
-		font-size: 11px;
+		.info-img {
+			padding-top: 20px;
+		}
+		.accordion {
+			padding: 15px 10px;
+			.Collapsible {
+				span {
+					padding: 15px;
+					font-size: 16px;
+					font-weight: 600;
+				}
+			}
+		}
+		.features {
+			margin: 0;
+			padding: 0;
+			padding-bottom: 15px;
+			img {
+				width: 20px;
+			}
+			li {
+				p {
+					padding-left: 15px;
+				}
+			}
+		}
+		.info .text h4 {
+			padding: 0;
+			padding-bottom: 15px;
+		}
 	}
 	.App {
 		.path {
